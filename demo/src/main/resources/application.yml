@@ -1,0 +1,22 @@
+
+#jdbc
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql:\\localhost:3306/gamll?charaterEncoding=UTF-8
+
+#服务信息
+server:
+  port: 8080
+#  context-path: /gmall
+
+#日志级别
+logging:
+  level: debug
+
+#mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true

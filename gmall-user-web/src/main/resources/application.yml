@@ -1,0 +1,18 @@
+spring:
+  dubbo:
+    application:
+      name: user-web
+    protocol: dubbo
+    registry:
+      address: 117.78.9.213:2181
+      protocol: zookeeper
+    base-package: com.ljp.gmall
+      check: false
+#服务信息
+server:
+  port: 8080
+
+#日志级别
+logging:
+  level:
+    root: debug
