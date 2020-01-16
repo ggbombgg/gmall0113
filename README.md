@@ -3,3 +3,6 @@
 #gmall-user 服务端口:8080
 gmall-user-service 8070
 gmass-user-web 8080
+
+gmall-manage-service 8071
+gmass-manage-web 8081

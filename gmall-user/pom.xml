@@ -21,7 +21,7 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.jsp</groupId>
+            <groupId>com.ljp</groupId>
             <artifactId>gmall-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

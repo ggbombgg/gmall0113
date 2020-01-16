@@ -1,7 +1,7 @@
 spring:
   dubbo:
     application:
-      name: user-web
+      name: manage-web
     protocol: dubbo
     registry:
       address: 117.78.9.213:2181
@@ -9,11 +9,14 @@ spring:
     base-package: com.ljp.gmall
     consumer:
       check: false
+      timeout: 600000
+
 #服务信息
 server:
-  port: 8080
+  port: 8081
 
 #日志级别
 logging:
   level:
-    root: debug
+    root: info
+
