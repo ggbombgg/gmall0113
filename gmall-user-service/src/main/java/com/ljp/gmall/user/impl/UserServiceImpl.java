@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId) {
         Example e = new Example(UmsMemberReceiveAddress.class);
-
+        e.createCriteria().andEqualTo("memberId",memberId);
         List<UmsMemberReceiveAddress> umsMemberReceiveAddressList = umsMemberReceiveAddressMapper.selectByExample(e);
         return umsMemberReceiveAddressList;
     }
